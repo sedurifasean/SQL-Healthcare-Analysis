@@ -19,32 +19,32 @@ Cost Analysis: The average cost of treatments varies significantly across differ
 High-Cost Patients: A small group of patients accounts for a disproportionately high total cost, suggesting areas for targeted cost management.
 
 **Project Structure**
-1. Data Cleaning
+1. Data Cleaning <br />
 Scripts in this section handle missing values, remove duplicates, and standardize data formats.
 
-2. Data Exploration
+2. Data Exploration <br />
 Exploratory data analysis scripts provide descriptive statistics and initial insights into the dataset.
 
-3. Aggregation
+3. Aggregation <br />
 Aggregation scripts summarize data by various dimensions, such as monthly trends and department-wise summaries.
 
-4. Joins
+4. Joins <br />
 Joining scripts combine data from the main dataset with additional tables to provide a richer dataset for analysis.
 
-5. Window Functions
+5. Window Functions <br />
 Advanced analytical scripts use window functions to calculate running totals, moving averages, and other metrics.
 
-6. Data Analysis
+6. Data Analysis <br />
 Data analysis scripts answer specific business questions, such as identifying high-cost patients and analyzing patient visit trends.
 
-**Repository Contents**
-data_cleaning: Contains SQL scripts for cleaning the dataset.
-data_exploration: Contains SQL scripts for exploratory data analysis.
-aggregation: Contains SQL scripts for data aggregation.
-joins: Contains SQL scripts for joining multiple tables.
-window_functions: Contains SQL scripts for applying window functions.
+**Repository Contents** <br />
+data_cleaning: Contains SQL scripts for cleaning the dataset. <br />
+data_exploration: Contains SQL scripts for exploratory data analysis. <br />
+aggregation: Contains SQL scripts for data aggregation. <br />
+joins: Contains SQL scripts for joining multiple tables. <br />
+window_functions: Contains SQL scripts for applying window functions. <br />
 data_analysis: Contains SQL scripts for detailed data analysis.
 
-**Conclusion**
-This project demonstrates comprehensive SQL skills, including data cleaning, exploration, aggregation, joins, window functions, and data analysis. 
+**Conclusion** <br />
+This project demonstrates comprehensive SQL skills, including data cleaning, exploration, aggregation, joins, window functions, and data analysis.  <br />
 The insights gained from the analysis can help healthcare providers improve patient care and operational efficiency.
