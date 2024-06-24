@@ -91,3 +91,17 @@ SELECT
 FROM healthcare_dataset
 GROUP BY month
 ORDER BY month;
+
+7. DEFINING A TABLE SCHEMA
+
+-- Example of creating tables with columns 
+CREATE TABLE healthcare_dataset (
+    patient_id SERIAL PRIMARY KEY,
+    visit_date DATE NOT NULL,
+    department VARCHAR(50) NOT NULL,
+    treatment_cost NUMERIC(10, 2) NOT NULL,
+    treatment_type VARCHAR(100),
+    patient_age INTEGER,
+    patient_gender CHAR(1) CHECK (patient_gender IN ('M', 'F')),
+    patient_zip_code VARCHAR(10)
+);
