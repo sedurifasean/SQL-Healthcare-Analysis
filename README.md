@@ -1,6 +1,3 @@
-# SQL-Healthcare-Analysis <br />
-SQL Project Overview: Demonstrates advanced database design, optimized queries, data analysis, and security considerations through practical SQL techniques and comprehensive documentation.
-
 **Project Summary** <br />
 This project involves analyzing a healthcare dataset to identify trends, patterns, and insights that can help improve patient care and operational efficiency. 
 The analysis covers various aspects of data handling, including data cleaning, exploration, aggregation, joins, window functions, and data analysis.
@@ -18,7 +15,7 @@ Patient Distribution: The majority of patient visits occur in specific months, i
 Cost Analysis: The average cost of treatments varies significantly across different departments and patient demographics. <br />
 High-Cost Patients: A small group of patients accounts for a disproportionately high total cost, suggesting areas for targeted cost management.
 
-**Project Structure**
+**Project Structure** <br />
 1. Data Cleaning <br />
 Scripts in this section handle missing values, remove duplicates, and standardize data formats.
 
