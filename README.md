@@ -6,12 +6,12 @@ This project involves analyzing a healthcare dataset to identify trends, pattern
 The analysis covers various aspects of data handling, including data cleaning, exploration, aggregation, joins, window functions, and data analysis.
 
 **Objectives**
-Data Cleaning: Prepare the dataset by handling missing values, removing duplicates, and standardizing formats.
-Data Exploration: Perform descriptive statistics and initial data visualizations to understand the dataset.
-Aggregation: Summarize data by different dimensions to extract meaningful insights.
-Joins: Combine data from multiple tables to enrich the dataset.
-Window Functions: Apply advanced analytical techniques using window functions.
-Data Analysis: Answer specific business questions related to healthcare operations and patient care.
+• Data Cleaning: Prepare the dataset by handling missing values, removing duplicates, and standardizing formats.
+• Data Exploration: Perform descriptive statistics and initial data visualizations to understand the dataset.
+• Aggregation: Summarize data by different dimensions to extract meaningful insights.
+• Joins: Combine data from multiple tables to enrich the dataset.
+• Window Functions: Apply advanced analytical techniques using window functions.
+• Data Analysis: Answer specific business questions related to healthcare operations and patient care.
 
 **Key Findings**
 Patient Distribution: The majority of patient visits occur in specific months, indicating seasonal trends.
