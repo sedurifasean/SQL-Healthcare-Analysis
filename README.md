@@ -1,7 +1,7 @@
-# SQL-Healthcare-Analysis
+# SQL-Healthcare-Analysis <br />
 SQL Project Overview: Demonstrates advanced database design, optimized queries, data analysis, and security considerations through practical SQL techniques and comprehensive documentation.
 
-**Project Summary**
+**Project Summary** <br />
 This project involves analyzing a healthcare dataset to identify trends, patterns, and insights that can help improve patient care and operational efficiency. 
 The analysis covers various aspects of data handling, including data cleaning, exploration, aggregation, joins, window functions, and data analysis.
 
@@ -46,5 +46,5 @@ window_functions: Contains SQL scripts for applying window functions. <br />
 data_analysis: Contains SQL scripts for detailed data analysis.
 
 **Conclusion** <br />
-This project demonstrates comprehensive SQL skills, including data cleaning, exploration, aggregation, joins, window functions, and data analysis.  <br />
+This project demonstrates comprehensive SQL skills, including data cleaning, exploration, aggregation, joins, window functions, and data analysis. 
 The insights gained from the analysis can help healthcare providers improve patient care and operational efficiency.
