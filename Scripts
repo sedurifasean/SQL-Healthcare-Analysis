@@ -1,0 +1,93 @@
+1. DATA CLEANING 
+
+-- Load the dataset
+SELECT * FROM healthcare_dataset;
+
+-- Handling missing values (example)
+-- Replace NULLs in 'column_name' with a default value
+UPDATE healthcare_dataset
+SET column_name = 'default_value'
+WHERE column_name IS NULL;
+
+-- Removing duplicates
+DELETE FROM healthcare_dataset
+WHERE rowid NOT IN (
+  SELECT MIN(rowid)
+  FROM healthcare_dataset
+  GROUP BY column_name1, column_name2, ...
+);
+
+-- Standardizing formats (example)
+-- Convert dates to a standard format
+UPDATE healthcare_dataset
+SET date_column = TO_DATE(date_column, 'MM/DD/YYYY');
+
+2. DATA EXPLORATION
+
+-- Descriptive statistics
+SELECT
+  COUNT(*) AS total_records,
+  AVG(numeric_column) AS average_value,
+  MIN(numeric_column) AS min_value,
+  MAX(numeric_column) AS max_value
+FROM healthcare_dataset;
+
+-- Distribution of a categorical column
+SELECT
+  categorical_column,
+  COUNT(*) AS count
+FROM healthcare_dataset
+GROUP BY categorical_column;
+
+3. AGGREGATION
+
+-- Summarize data by a specific dimension (e.g., month)
+SELECT
+  DATE_TRUNC('month', date_column) AS month,
+  COUNT(*) AS patient_count,
+  AVG(cost) AS average_cost
+FROM healthcare_dataset
+GROUP BY month;
+
+4. JOINS
+
+-- Assuming there is another table 'patient_info'
+SELECT
+  h.*,
+  p.patient_name,
+  p.patient_age
+FROM healthcare_dataset h
+JOIN patient_info p ON h.patient_id = p.patient_id;
+
+5. WINDOW FUNCTIONS 
+
+-- Calculate the running total of a numeric column
+SELECT
+  *,
+  SUM(numeric_column) OVER (ORDER BY date_column) AS running_total
+FROM healthcare_dataset;
+
+-- Calculate the average cost per patient over the last 7 days
+SELECT
+  *,
+  AVG(cost) OVER (PARTITION BY patient_id ORDER BY date_column ROWS BETWEEN 6 PRECEDING AND CURRENT ROW) AS avg_cost_last_7_days
+FROM healthcare_dataset;
+
+6. DATA ANALYSIS 
+
+-- Example analysis: Identify top 10 patients with highest total costs
+SELECT
+  patient_id,
+  SUM(cost) AS total_cost
+FROM healthcare_dataset
+GROUP BY patient_id
+ORDER BY total_cost DESC
+LIMIT 10;
+
+-- Example analysis: Monthly trend of patient visits
+SELECT
+  DATE_TRUNC('month', date_column) AS month,
+  COUNT(*) AS visit_count
+FROM healthcare_dataset
+GROUP BY month
+ORDER BY month;
