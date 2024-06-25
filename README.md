@@ -18,31 +18,26 @@ The analysis covers various aspects of data handling, including data cleaning, e
 - High-Cost Patients: A small group of patients accounts for a disproportionately high total cost, suggesting areas for targeted cost management.
 
 ## **Project Structure** <br />
-1. Data Cleaning <br />
-Scripts in this section handle missing values, remove duplicates, and standardize data formats.
+1. Data Cleaning: Scripts in this section handle missing values, remove duplicates, and standardize data formats.
 
-2. Data Exploration <br />
-Exploratory data analysis scripts provide descriptive statistics and initial insights into the dataset.
+2. Data Exploration: Exploratory data analysis scripts provide descriptive statistics and initial insights into the dataset.
 
-3. Aggregation <br />
-Aggregation scripts summarize data by various dimensions, such as monthly trends and department-wise summaries.
+3. Aggregation: Aggregation scripts summarize data by various dimensions, such as monthly trends and department-wise summaries.
 
-4. Joins <br />
-Joining scripts combine data from the main dataset with additional tables to provide a richer dataset for analysis.
+4. Joins: Joining scripts combine data from the main dataset with additional tables to provide a richer dataset for analysis.
 
-5. Window Functions <br />
-Advanced analytical scripts use window functions to calculate running totals, moving averages, and other metrics.
+5. Window Functions: Advanced analytical scripts use window functions to calculate running totals, moving averages, and other metrics.
 
-6. Data Analysis <br />
-Data analysis scripts answer specific business questions, such as identifying high-cost patients and analyzing patient visit trends.
+6. Data Analysis: Data analysis scripts answer specific business questions, such as identifying high-cost patients and analyzing patient visit trends.
 
 ## **Repository Contents** <br />
-- data_cleaning: Contains SQL scripts for cleaning the dataset. <br />
-- data_exploration: Contains SQL scripts for exploratory data analysis. <br />
-- aggregation: Contains SQL scripts for data aggregation. <br />
-- joins: Contains SQL scripts for joining multiple tables. <br />
-- window_functions: Contains SQL scripts for applying window functions. <br />
-- data_analysis: Contains SQL scripts for detailed data analysis.
+- Data cleaning: Contains SQL scripts for cleaning the dataset. <br />
+- Data exploration: Contains SQL scripts for exploratory data analysis. <br />
+- Aggregation: Contains SQL scripts for data aggregation. <br />
+- Joins: Contains SQL scripts for joining multiple tables. <br />
+- Window functions: Contains SQL scripts for applying window functions. <br />
+- Data analysis: Contains SQL scripts for detailed data analysis.
+- Table creation: Contains SQL scripts on creation of tables with columns and editing tables.
 
 ## **Conclusion** <br />
 This project demonstrates comprehensive SQL skills, including data cleaning, exploration, aggregation, joins, window functions, and data analysis. The insights gained from the analysis can help healthcare providers improve patient care and operational efficiency.
