@@ -1,7 +1,7 @@
 # **SQL Healthcare Analysis** 
 
 ## **Project Summary** <br />
-This project involves analyzing a healthcare dataset to identify trends, patterns, and insights that can help improve patient care and operational efficiency. The analysis covers various aspects of data handling, including data cleaning, exploration, aggregation, joins, window functions, and data analysis.
+This project involves analyzing a healthcare dataset to identify trends, patterns, and insights that can help improve patient care and operational efficiency. The analysis covers various aspects of data handling, including data cleaning, exploration, aggregation, joins, window functions, data analysis and table creation.
 
 ## **Objectives** <br />
 - Data Cleaning: Prepare the dataset by handling missing values, removing duplicates, and standardizing formats. <br />
@@ -10,7 +10,7 @@ This project involves analyzing a healthcare dataset to identify trends, pattern
 - Joins: Combine data from multiple tables to enrich the dataset. <br />
 - Window Functions: Apply advanced analytical techniques using window functions. <br />
 - Data Analysis: Answer specific business questions related to healthcare operations and patient care. <br />
-- Table creation: 
+- Table creation: Create and edit tables with columns and assigned keys. 
 
 ## **Key Findings** <br />
 - Patient Distribution: The majority of patient visits occur in specific months, indicating seasonal trends. <br />
@@ -30,14 +30,7 @@ This project involves analyzing a healthcare dataset to identify trends, pattern
 
 6. Data Analysis: Data analysis scripts answer specific business questions, such as identifying high-cost patients and analyzing patient visit trends.
 
-## **Repository Contents** <br />
-- Data cleaning: Contains SQL scripts for cleaning the dataset. <br />
-- Data exploration: Contains SQL scripts for exploratory data analysis. <br />
-- Aggregation: Contains SQL scripts for data aggregation. <br />
-- Joins: Contains SQL scripts for joining multiple tables. <br />
-- Window functions: Contains SQL scripts for applying window functions. <br />
-- Data analysis: Contains SQL scripts for detailed data analysis.
-- Table creation: Contains SQL scripts on creation of tables with columns and editing tables.
+7. Table Schema Creation: Creating table with specified columns and variables. 
 
 ## **Conclusion** <br />
 This project demonstrates comprehensive SQL skills, including data cleaning, exploration, aggregation, joins, window functions, and data analysis. The insights gained from the analysis can help healthcare providers improve patient care and operational efficiency.
