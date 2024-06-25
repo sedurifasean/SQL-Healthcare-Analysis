@@ -1,6 +1,5 @@
 1. DATA CLEANING 
- <span style="color: red;">
--- Load the dataset </span>
+-- Load the dataset
 SELECT * FROM healthcare_dataset;
 
 -- Handling missing values (example)
