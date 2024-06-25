@@ -2,9 +2,7 @@
 
 ## **Project Summary** <br />
 This project involves analyzing a healthcare dataset to identify trends, patterns, and insights that can help improve patient care and operational efficiency. 
-The analysis covers various aspects of data handling, including data cleaning, exploration, aggregation, joins, window functions, and data analysis. {
-    color: gray;
-}
+The analysis covers various aspects of data handling, including data cleaning, exploration, aggregation, joins, window functions, and data analysis. <code style="color : darkorange">TESTE</code>
 
 ## **Objectives** <br />
 - Data Cleaning: Prepare the dataset by handling missing values, removing duplicates, and standardizing formats. <br />
