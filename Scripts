@@ -1,4 +1,6 @@
-1. DATA CLEANING 
+# SQL Healthcare Analysis 
+
+##1. DATA CLEANING 
 
 -- Load the dataset
 SELECT * FROM healthcare_dataset;
@@ -22,7 +24,7 @@ WHERE rowid NOT IN (
 UPDATE healthcare_dataset
 SET date_column = TO_DATE(date_column, 'MM/DD/YYYY');
 
-2. DATA EXPLORATION
+## 2. DATA EXPLORATION
 
 -- Descriptive statistics
 SELECT
@@ -39,7 +41,7 @@ SELECT
 FROM healthcare_dataset
 GROUP BY categorical_column;
 
-3. AGGREGATION
+## 3. AGGREGATION
 
 -- Summarize data by a specific dimension (e.g., month)
 SELECT
@@ -49,7 +51,7 @@ SELECT
 FROM healthcare_dataset
 GROUP BY month;
 
-4. JOINS
+## 4. JOINS
 
 -- Assuming there is another table 'patient_info'
 SELECT
@@ -59,7 +61,7 @@ SELECT
 FROM healthcare_dataset h
 JOIN patient_info p ON h.patient_id = p.patient_id;
 
-5. WINDOW FUNCTIONS 
+## 5. WINDOW FUNCTIONS 
 
 -- Calculate the running total of a numeric column
 SELECT
@@ -73,7 +75,7 @@ SELECT
   AVG(cost) OVER (PARTITION BY patient_id ORDER BY date_column ROWS BETWEEN 6 PRECEDING AND CURRENT ROW) AS avg_cost_last_7_days
 FROM healthcare_dataset;
 
-6. DATA ANALYSIS 
+## 6. DATA ANALYSIS 
 
 -- Example analysis: Identify top 10 patients with highest total costs
 SELECT
@@ -92,7 +94,7 @@ FROM healthcare_dataset
 GROUP BY month
 ORDER BY month;
 
-7. DEFINING A TABLE SCHEMA
+## 7. DEFINING A TABLE SCHEMA
 
 -- Example of creating tables with columns 
 CREATE TABLE healthcare_dataset (
