@@ -1,4 +1,4 @@
-1. DATA CLEANING `#RRGGBB`	
+1. DATA CLEANING 
 -- Load the dataset
 SELECT * FROM healthcare_dataset;
 
