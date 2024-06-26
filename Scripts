@@ -17,7 +17,7 @@ WHERE rowid NOT IN (
 );
 
 -- Standarizing names (Example)
--- Concert names to a consistent case and trim extra spaces
+-- Convert names to a consistent case and trim extra spaces
 UPDATE healthcare_data 
 SET name = TRIM(INITCAP(REGEXP_REPLACE(name, '[^a-zA-Z\s]', '', 'g')));
 
