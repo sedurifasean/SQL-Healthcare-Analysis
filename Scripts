@@ -79,22 +79,60 @@ FROM healthcare_dataset;
 
 6. DATA ANALYSIS 
 
--- Example analysis: Identify top 10 patients with highest total costs
-SELECT
-  patient_id,
-  SUM(cost) AS total_cost
-FROM healthcare_dataset
-GROUP BY patient_id
-ORDER BY total_cost DESC
-LIMIT 10;
+-- Identify age distribution and health conditions 
+-- Understanding the distribution of medical conditions across different age groups can help in targeting preventive measures.
+SELECT 
+  Age, COUNT(*) as PatientCount, Medical_Condition
+FROM healthcare_data
+GROUP BY Age, Medical_Condition
+ORDER BY Age;
 
--- Example analysis: Monthly trend of patient visits
+-- Identify gender and medical conditions
+-- Analyzing the prevalence of medical conditions by gender can assist in gender-specific healthcare initiatives.
+SELECT 
+  Gender, Medical_Condition, COUNT(*) as PatientCount
+FROM healthcare_data
+GROUP BY Gender, Medical_Condition
+ORDER BY Gender, Medical_Condition;
+
+-- Monthly trend of patient visits
+-- Identifying the pattern of patient visits can help prepare proper treatments for patients 
 SELECT
   DATE_TRUNC('month', date_column) AS month,
   COUNT(*) AS visit_count
 FROM healthcare_dataset
 GROUP BY month
 ORDER BY month;
+
+-- Hospital and admission types 
+-- Assessing which hospitals handle more emergency cases versus elective admissions can help in resource allocation.
+SELECT Hospital, Admission_Type, COUNT(*) as AdmissionCount
+FROM healthcare_data
+GROUP BY Hospital, Admission_Type
+ORDER BY Hospital, Admission_Type;
+
+-- Identify readmission rates 
+-- Identifying the readmission rates by checking the same patients with multiple admission records can provide insights into healthcare quality.
+SELECT 
+  Name, COUNT(*) as AdmissionCount
+FROM healthcare_data
+GROUP BY Name
+HAVING COUNT(*) > 1
+ORDER BY AdmissionCount DESC;
+
+-- Analyze discharge outcomes
+-- Analyzing the correlation between admission types and discharge outcomes can improve patient care plans.
+SELECT Admission_Type, Test_Results, COUNT(*) as OutcomeCount
+FROM healthcare_data
+GROUP BY Admission_Type, Test_Results
+ORDER BY Admission_Type, Test_Results;
+
+-- Analyze medication effectiveness
+-- Investigating the effectiveness of medications based on test results can guide medication policies.
+SELECT Medication, Test_Results, COUNT(*) as OutcomeCount
+FROM healthcare_data
+GROUP BY Medication, Test_Results
+ORDER BY Medication, Test_Results;
 
 7. DEFINING A TABLE SCHEMA
 
