@@ -16,6 +16,11 @@ WHERE rowid NOT IN (
   GROUP BY column_name1, column_name2, ...
 );
 
+-- Standarizing names (Example)
+-- Concert names to a consistent case and trim extra spaces
+UPDATE healthcare_data 
+SET name = TRIM(INITCAP(REGEXP_REPLACE(name, '[^a-zA-Z\s]', '', 'g')));
+
 -- Standardizing formats (example)
 -- Convert dates to a standard format
 UPDATE healthcare_dataset
