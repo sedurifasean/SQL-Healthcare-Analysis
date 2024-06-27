@@ -13,11 +13,11 @@ This project involves analyzing a healthcare dataset to identify trends, pattern
 - Table creation: Create and edit tables with columns and assigned keys. 
 
 ## **Key Findings** <br />
-- The most common medical condition based on age and health condition is obesity found between the ages of 50-59. Therefore, I can bring more awareness and preventative measures such as diet and exercise with people in this age range.
+- The most common medical condition based on age and health condition is obesity found between the ages of 50-59. Therefore, I suggest bringing more awareness and preventative measures such as diet and exercise with people within this age range.
 - The most common medical condition based off gender is arthritis in females and diabetes in males. Therefore, I can suggest that patients regularly perform specific stretches and recommended diet that will help those at high risk.
-- There appears to be a spike in medical visits for asthma starting in August and September. Although a person cannot avoid going outside, reducing the risk of pollen by regularly cleaning, and staying indoors can help to lower triggers.
-- LLC Smith, Ltd Smith, and Johnson PLC in that order, have the most frequent patient visits and a greater quantity of resources can be allocated to those locations.
-- There is a high frequency of readmission rates with those who have diabetes and obesity. I suggest looking into the current treatment plans and seek to improve them. 
+- There appears to be a spike in medical visits for asthma starting in August and September. Although a person cannot avoid going outside, reducing the risk of pollen by regularly cleaning, and staying indoors can help lower triggers.
+- The hospitals that had the most visitations are in the order of LLC Smith, Ltd Smith, and Johnson PLC. Therefore, a greater quantity of resources can be allocated to these locations.
+- There is a high frequency of readmission rates with those who have diabetes and obesity. I suggest looking into the current treatment plans and seek alternative methods to improve them. 
 
 ## **Project Structure** <br />
 1. Data Cleaning: Scripts in this section handle missing values, remove duplicates, and standardize data formats.
