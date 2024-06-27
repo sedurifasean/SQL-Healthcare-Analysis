@@ -82,10 +82,23 @@ FROM healthcare_dataset;
 -- Identify age distribution and health conditions 
 -- Understanding the distribution of medical conditions across different age groups can help in targeting preventive measures.
 SELECT 
-  Age, COUNT(*) as PatientCount, Medical_Condition
+    CASE 
+        WHEN Age BETWEEN 10 AND 19 THEN '10-19'
+        WHEN Age BETWEEN 20 AND 29 THEN '20-29'
+        WHEN Age BETWEEN 30 AND 39 THEN '30-39'
+        WHEN Age BETWEEN 40 AND 49 THEN '40-49'
+        WHEN Age BETWEEN 50 AND 59 THEN '50-59'
+        WHEN Age BETWEEN 60 AND 69 THEN '60-69'
+        WHEN Age BETWEEN 70 AND 79 THEN '70-79'
+        WHEN Age BETWEEN 80 AND 89 THEN '80-89'
+        WHEN Age BETWEEN 90 AND 99 THEN '90-99'
+        ELSE '100+'
+    END as Age_Group,
+    Medical_Condition,
+    COUNT(*) as PatientCount
 FROM healthcare_data
-GROUP BY Age, Medical_Condition
-ORDER BY Age;
+GROUP BY Age_Group, Medical_Condition
+ORDER BY Medical_Condition, PatientCount DESC;
 
 -- Identify gender and medical conditions
 -- Analyzing the prevalence of medical conditions by gender can assist in gender-specific healthcare initiatives.
@@ -119,20 +132,6 @@ FROM healthcare_data
 GROUP BY Name
 HAVING COUNT(*) > 1
 ORDER BY AdmissionCount DESC;
-
--- Analyze discharge outcomes
--- Analyzing the correlation between admission types and discharge outcomes can improve patient care plans.
-SELECT Admission_Type, Test_Results, COUNT(*) as OutcomeCount
-FROM healthcare_data
-GROUP BY Admission_Type, Test_Results
-ORDER BY Admission_Type, Test_Results;
-
--- Analyze medication effectiveness
--- Investigating the effectiveness of medications based on test results can guide medication policies.
-SELECT Medication, Test_Results, COUNT(*) as OutcomeCount
-FROM healthcare_data
-GROUP BY Medication, Test_Results
-ORDER BY Medication, Test_Results;
 
 7. DEFINING A TABLE SCHEMA
 
