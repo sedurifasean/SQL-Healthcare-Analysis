@@ -21,7 +21,7 @@ This project involves analyzing a healthcare dataset to identify trends, pattern
 ## **Key Findings** <br />
 - The most common medical condition based on age and health condition is obesity found between the ages of 50-59. Therefore, I suggest bringing more awareness and preventative measures such as diet and exercise with people within this age range.
 - The most common medical condition based off gender is arthritis in females and diabetes in males. Therefore, I can suggest that patients regularly perform specific stretches and recommended diet that will help those at high risk.
-- There appears to be a spike in medical visits for asthma starting in August. Although a person cannot avoid going outside, reducing the risk of pollen by regularly cleaning, and staying indoors can help lower triggers. In addition, the amount of asthma cases is slightly decreasing which suggests that the treatments for asthma is working.
+- There is a spike in medical visits for asthma in August. Although a person cannot avoid going outside, reducing the risk of pollen by regularly cleaning, and staying indoors can help lower triggers. In addition, the amount of asthma cases is slightly decreasing in each year which suggests that the treatments for asthma is working.
 - The hospitals that had the most visitations are in the order of LLC Smith, Ltd Smith, and Johnson PLC. Therefore, a greater quantity of resources can be allocated to these locations.
 - There is a high frequency of readmission rates with those who have diabetes and obesity. I suggest looking into the current treatment plans and seek alternative methods to improve them. 
 
