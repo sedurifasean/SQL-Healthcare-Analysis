@@ -1,7 +1,7 @@
 # **SQL Healthcare Analysis** 
 
 ## **Project Summary** <br />
-This project involves analyzing a healthcare dataset to identify trends, patterns, and insights that can help improve patient care and operational efficiency. The analysis covers various aspects of data handling, including data cleaning, exploration, aggregation, joins, window functions, data analysis and table creation.
+This project involves analyzing a healthcare dataset from Kaggle to identify trends, patterns, and insights that can help improve patient care and operational efficiency. The analysis covers various aspects of data handling, including data cleaning, exploration, aggregation, joins, window functions, data analysis and table creation.
 
 ## **Objectives** <br />
 1. Data Cleaning: Scripts in this section handle missing values, remove duplicates, and standardize data formats.
